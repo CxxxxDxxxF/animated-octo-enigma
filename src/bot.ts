@@ -139,7 +139,7 @@ export class ArbitrageBot {
                 autoTradeEnabled: this.config.autoTradeEnabled,
                 filledOrdersHistory: this.state.filledOrdersHistory
             };
-            fs.writeFileSync('bot_state.json', JSON.stringify(data, null, 2));
+            fs.writeFileSync('data/bot_state.json', JSON.stringify(data, null, 2));
         } catch (e) {
             // Log to console only to avoid infinite loop if log uses state
             console.error('Failed to save state:', e);
@@ -149,15 +149,15 @@ export class ArbitrageBot {
     private loadState() {
         try {
             const fs = require('fs');
-            if (fs.existsSync('bot_state.json')) {
-                const data = JSON.parse(fs.readFileSync('bot_state.json', 'utf8'));
+            if (fs.existsSync('data/bot_state.json')) {
+                const data = JSON.parse(fs.readFileSync('data/bot_state.json', 'utf8'));
                 this.state = {
                     ...this.state,
                     ...data,
                     // Ensure autoTradeEnabled syncs with config
                     autoTradeEnabled: this.config.autoTradeEnabled
                 };
-                this.log('💾 State restored from bot_state.json');
+                this.log('💾 State restored from data/bot_state.json');
             }
         } catch (e) {
             this.log('⚠️ Failed to load state: ' + e);

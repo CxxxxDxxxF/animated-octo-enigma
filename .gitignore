@@ -3,14 +3,11 @@ node_modules/
 dashboard/node_modules/
 
 # Logs
+logs/
 *.log
-bot.log
-bot_debug.log
-dashboard.log
 
-# State and Database
-bot_state.json
-pmxt.db
+# Data and State
+data/
 bot.pid
 
 # Environment variables

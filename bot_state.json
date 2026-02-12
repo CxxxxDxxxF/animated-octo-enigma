@@ -1,0 +1,59 @@
+{
+  "kalshiBalance": 34.6,
+  "initialDailyBalance": 34.6,
+  "currentExposure": 26.419999999999998,
+  "dailyPL": 18,
+  "activePositions": [
+    {
+      "marketId": "KXPRESPERSON-28-MRUB",
+      "outcomeId": "KXPRESPERSON-28-MRUB",
+      "outcomeLabel": "KXPRESPERSON-28-MRUB",
+      "size": 200,
+      "entryPrice": 0.1321,
+      "currentPrice": 0.09,
+      "unrealizedPnL": -8.42,
+      "realizedPnL": -1,
+      "displayTitle": "Marco Rubio",
+      "entryTime": 1770917506628
+    }
+  ],
+  "pendingOrders": [],
+  "marketNameCache": {
+    "KXNCAAMBGAME-26FEB11MICHNW-MICH": "Michigan Men's Basketball",
+    "KXPRESPERSON-28-MRUB": "Marco Rubio",
+    "KXPRESPERSON-28-TGAB": "Tulsi Gabbard",
+    "KXPRESPERSON-28-SSMI": "Stephen A. Smith",
+    "KXPRESPERSON-28-JVAN": "J.D. Vance",
+    "KXPRESPERSON-28-GYOU": "Glenn Youngkin",
+    "KXPRESPERSON-28-GABB": "Greg Abbott",
+    "KXPRESPERSON-28-ABES": "Andy Beshear",
+    "KXPRESPERSON-28-VRAM": "Vivek Ramaswamy",
+    "KXPRESPERSON-28-JDIM": "Jamie Dimon",
+    "KXPRESPERSON-28-JOSS": "Jon Ossoff",
+    "KXPRESPERSON-28-WMOO": "Wes Moore",
+    "KXPRESPERSON-28-DTRUJR": "Donald J. Trump Jr."
+  },
+  "executionSignals": [
+    {
+      "id": 1770917506587,
+      "type": "opportunity",
+      "time": "12:31:46 PM",
+      "message": "Marco Rubio: 10.5% spread, 100 contracts"
+    }
+  ],
+  "autoTradeEnabled": false,
+  "filledOrdersHistory": {
+    "KXNCAAMBGAME-26FEB11MICHNW-MICHKXNCAAMBGAME-26FEB11MICHNW-MICH": {
+      "price": 0.45,
+      "avgPrice": 0.45,
+      "totalSize": 50,
+      "time": 1770868952111
+    },
+    "KXPRESPERSON-28-MRUBKXPRESPERSON-28-MRUB": {
+      "price": 0.1321,
+      "avgPrice": 0.1321,
+      "totalSize": 200,
+      "time": 1770917506628
+    }
+  }
+}
