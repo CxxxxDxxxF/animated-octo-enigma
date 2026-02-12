@@ -1,0 +1,43 @@
+{
+  "name": "animated-octo-enigma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run bot\" \"npm run dashboard\"",
+    "bot": "npx ts-node src/main.ts",
+    "dashboard": "cd dashboard && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CxxxxDxxxF/animated-octo-enigma.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/CxxxxDxxxF/animated-octo-enigma/issues"
+  },
+  "homepage": "https://github.com/CxxxxDxxxF/animated-octo-enigma#readme",
+  "dependencies": {
+    "@types/dotenv": "^6.1.1",
+    "better-sqlite3": "^12.6.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1",
+    "luxon": "^3.7.2",
+    "pmxtjs": "^2.0.11"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/luxon": "^3.7.1",
+    "@types/node": "^25.2.3",
+    "concurrently": "^9.2.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

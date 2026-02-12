@@ -1,0 +1,38 @@
+# Dependency directories
+node_modules/
+dashboard/node_modules/
+
+# Logs
+*.log
+bot.log
+bot_debug.log
+dashboard.log
+
+# State and Database
+bot_state.json
+pmxt.db
+bot.pid
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# TypeScript paths
+tsconfig.tsbuildinfo
