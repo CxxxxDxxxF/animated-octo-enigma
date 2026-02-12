@@ -32,4 +32,14 @@ An automated trading bot and portfolio tracker for Kalshi prediction markets.
 ## Profile Tracking Notes
 
 - **API Limitations**: Specific portfolio details (live unrealized PnL, full position lists) for other users are often restricted via the official public API. The engine records "Equity" and "Realized PnL" snapshots based on available public stats and labels unavailable fields clearly in the UI.
-- **Snapshots**: Run automatically every 24 hours while the bot is active.
+
+## Project Structure
+
+- `src/`: Core bot engine logic (TypeScript).
+  - `bot.ts`: Main bot class with trading and polling logic.
+  - `main.ts`: Entry point with configuration and process handling.
+  - `scheduler.ts`: Rate-limiting request handler.
+  - `socialService.ts`: Social intelligence and market discovery logic.
+- `dashboard/`: Next.js web interface for monitoring and control.
+- `bot_state.json`: Local state persistence (ignored by git).
+- `pmxt.db`: SQLite database for social intelligence snapshots (ignored by git).
